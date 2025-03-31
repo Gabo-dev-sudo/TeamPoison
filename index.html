@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+
     <form action="https://192.168.1.70/ejemplo/registrar.php" method="post">
 
-       <h2>hola</h2>
-       <p>inicia tu registro</p>
+        <h2>LOGIN</h2>
+ 
+         <div class="login">
+             <input type="text" name="usuario" placeholder="Usuario" class="input">
+             <i class="fa-solid fa-user"></i>
 
-        <div class="login">
-            <input type="text" name="usuario" placeholder="usuario">
-        </div>
-
-        <div class="login">
-            <input type="email" name="email" placeholder="email">
-        </div>
-
-        <div class="login">
-            <input type="password" name="contraseña" placeholder="contraseña">
-        </div>
-
-
-        <input type="submit" name="registrador" value="enviar" class="btn">
+         </div>
+ 
+         <div class="login">
+             <input type="email" name="email" placeholder="Email" class="input">
+             <i class="fa-solid fa-envelope"></i>
+         </div>
+ 
+         <div class="login">
+             <input type="password" name="contraseña" placeholder="Contraseña" class="input">
+             <i class="fa-solid fa-lock"></i>
+         </div>
+ 
+ 
+         <input type="submit" name="registrador" value="Enviar" class="btn">
     </form>
 
-    
 
+   
 </body>
 </html>

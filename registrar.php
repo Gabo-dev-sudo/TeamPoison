@@ -14,19 +14,20 @@
                 $contraseña= trim($_POST['contraseña']);
                 $consulta= "INSERT INTO login1(usuario,email,contraseña)VALUES('$usuario', '$email', '$contraseña')";
                 $resultado= mysqli_query($conexion, $consulta); 
+
                 if($resultado){
-                 ?>
-                    <h3 class="success">tu registro fue exitoso</h3>
-                 <?php
-                }else{
-                 ?>
-                    <h3 class="error">ocurrio un error</h3>
-                 <?php
-                }
-            }else{
-                ?>
-                    <h3 class="error">llena todos los campos</h3>
-                <?php
+                    ?>
+                       <h3 class="success">tu registro fue exitoso</h3>
+                    <?php
+                   }else{
+                    ?>
+                       <h3 class="error">ocurrio un error</h3>
+                    <?php
+                   }
+               }else{
+                   ?>
+                       <h3 class="error">llena todos los campos</h3>
+                   <?php
             }
     }
 
